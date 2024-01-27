@@ -22,10 +22,6 @@ Hoje, estamos orgulhosos de ter ajudado milhares de animais a encontrar lares am
 
 Obrigado por fazer parte da nossa jornada e por considerar a adoção de um pet como uma opção digna e compassiva. Juntos, podemos fazer a diferença na vida de muitos animais de estimação e tornar o mundo um lugar melhor para eles.
 
-# Projeto XYZ
-
-Bem-vindo ao Projeto XYZ! Este é um repositório incrível com uma equipe ainda mais incrível de colaboradores.
-
 ## :handshake: Colaboradores
 <table>
   <tr>
@@ -59,5 +55,5 @@ Fique à vontade para fazer um fork deste projeto e contribuir. Adoraríamos rec
 
 ## Licença
 
-Este projeto é licenciado sob a [Licença XYZ](LICENSE).
+Este projeto está licenciado sob os termos da Licença MIT.
 
