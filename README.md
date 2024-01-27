@@ -49,6 +49,19 @@ Obrigado por fazer parte da nossa jornada e por considerar a adoção de um pet 
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/lucazalcantara">
+        <img src="https://avatars.githubusercontent.com/u/129864219?v=4" width="100px;" alt="Foto de Lucas Alcantara no GitHub"/><br>
+        <sub>
+          <b>lucazalcantara</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
 ## Contribuindo
 
 Fique à vontade para fazer um fork deste projeto e contribuir. Adoraríamos receber sua ajuda!
