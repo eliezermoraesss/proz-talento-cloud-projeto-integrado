@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--CSS GERAL-->
+        <link rel="stylesheet" href="../assets/css/css-final/global.css">
+        <link rel="stylesheet" href="../assets/css/css-final/chat.css">
+        <link rel="stylesheet" href="../assets/css/css-final/painel-lateral.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <!--CSS ESPECÍFICO-->
+        <link rel="stylesheet" href="../assets/css/css-final/perfil.css">
+
+        <title>Meu perfil</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="inicio.html">
+                        <img src="../assets/img/Logo1.png" alt="Logo ConnectPet">
+                    </a>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" class="search-text" placeholder="Pesquisar...">
+                    <a class="search-btn" href="#">
+                        <img src="../assets/img/lupa.svg" alt="lupa de pesquisa" class="lupa">
+                    </a>
+                </div>
+
+                <ul>
+                    <li class="profile-button">
+                        <a href="perfil.html">
+                            <span class="icon"><i class="bi bi-person-circle"></i></span>
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <a href="perfil.html">
+                                <i class="bi bi-person-fill"><span class="drop-txt">  Meu perfil</span></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-gear-fill"><span class="drop-txt">  Configurações</span></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-question-circle-fill"><span class="drop-txt">  Ajuda</span></i>
+                            </a>
+                            <a href="login.html">
+                                <i class="bi bi-box-arrow-right"><span class="drop-txt">  Sair</span></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>   
+        </header>
+
+        <nav class="menu-lateral">
+            
+            <ul>
+                <li class="item-menu">
+                    <a href="adotar.html">
+                        <span class="icon"><i class="bi bi-suit-heart-fill"></i></span>
+                        <span class="txt-link">Adotar</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="doar.html">
+                        <span class="icon"><i class="bi bi-box2-heart-fill"></i></span>
+                        <span class="txt-link">Doar</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-chat-fill"></i></span>
+                        <span class="txt-link">Mensagens</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-bell-fill"></i></span>
+                        <span class="txt-link">Notificações</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="container-chat">
+
+            <div class="chat">
+    
+                <a href="#"> 
+                    <span class="icon"><i class="bi bi-chat-fill"></i></span>
+                    <span class="title-chat">Bate-papo</span>
+                </a>
+    
+    
+                <div class="container-contacts">
+    
+                    <div class="box-contacts" onclick="showHideWindow('0')">
+                        <a href="#">
+                            <div class="contacts">
+                                <div class="foto-contacts">
+                                    <img src="../assets/img/pagina perfil/girl.jpg" alt="Ana Claudia Soares">
+                                </div>
+                                <h1 class="nome-contacts">Ana Claudia Soares</h1>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="box-contacts" onclick="showHideWindow('1')">
+                        <a href="#">
+                            <div class="contacts">
+                                <div class="foto-contacts">
+                                    <img src="../assets/img/pagina perfil/bruno.jpg" alt="Bruno Coelho Pires">
+                                </div>
+                                <h1 class="nome-contacts">Bruno Coelho Pires</h1>
+                            </div>
+                        </a>
+    
+                    </div>
+    
+                    <div class="box-contacts" onclick="showHideWindow('2')">
+                        <a href="#">
+                            <div class="contacts">
+                                <div class="foto-contacts">
+                                    <img src="../assets/img/pagina perfil/gabriela.jpg" alt="Gabriela Assunção Dias">
+                                </div>
+                                <h1 class="nome-contacts">Gabriela Assunção Dias</h1>
+                            </div>
+                        </a>
+    
+                    </div>
+    
+                    <div class="box-contacts" onclick="showHideWindow('3')">
+                        <a href="#">
+                            <div class="contacts">
+                                <div class="foto-contacts">
+                                    <img src="../assets/img/pagina perfil/cristina.jpg" alt="Cristina Vieira Goulart">
+                                </div>
+                                <h1 class="nome-contacts">Cristina Vieira Goulart</h1>
+                            </div>
+                        </a>
+    
+                    </div>
+    
+                    <div class="box-contacts" onclick="showHideWindow('4')">
+                        <a href="#">
+                            <div class="contacts">
+                                <div class="foto-contacts">
+                                    <img src="../assets/img/pagina perfil/joice.jpg" alt="Joice Tavares Cardoso">
+                                </div>
+                                <h1 class="nome-contacts">Joice Tavares Cardoso</h1>
+                            </div>
+                        </a>
+    
+                    </div>
+    
+                </div>
+            </div>
+        
+        
+    
+            
+            <div class="container-window">
+    
+                <div class="chat-window hide">
+                    <div class="title-window" onclick="minMaxWindow('0')">
+                        Ana Claudia Soares
+                    </div>
+                    <div class="message-window">
+                        <div class="message-send">
+                            <input type="text" placeholder="Escreva sua mensagem aqui...">
+                                <div class="send-icon">
+                                    <i class="bi bi-caret-right"></i>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="chat-window hide">
+                    <div class="title-window" onclick="minMaxWindow('1')">
+                        Bruno Coelho Pires
+                    </div>
+                    <div class="message-window">
+                        <div class="message-send">
+                            <input type="text" placeholder="Escreva sua mensagem aqui...">
+                                <div class="send-icon">
+                                    <i class="bi bi-caret-right"></i>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="chat-window hide">
+                    <div class="title-window" onclick="minMaxWindow('2')">
+                        Gabriela Assunção Dias
+                    </div>
+                    <div class="message-window">
+                        <div class="message-send">
+                            <input type="text" placeholder="Escreva sua mensagem aqui...">
+                                <div class="send-icon">
+                                    <i class="bi bi-caret-right"></i>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="chat-window hide">
+                    <div class="title-window" onclick="minMaxWindow('3')">
+                        Cristina Vieira Goulart
+                    </div>
+                    <div class="message-window">
+                        <div class="message-send">
+                            <input type="text" placeholder="Escreva sua mensagem aqui...">
+                                <div class="send-icon">
+                                    <i class="bi bi-caret-right"></i>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="chat-window hide">
+                    <div class="title-window" onclick="minMaxWindow('4')">
+                        Joice Tavares Cardoso
+                    </div>
+                    <div class="message-window">
+                        <div class="message-send">
+                            <input type="text" placeholder="Escreva sua mensagem aqui...">
+                                <div class="send-icon">
+                                    <i class="bi bi-caret-right"></i>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <main>
+            <div class="container">
+                <div class="head-container">
+                    <div class="screen">
+                        <a href="#">
+                            <p>Editar</p>
+                            <span class="screen-edit"><i class="bi bi-pencil-fill"></i></span>
+                        </a>
+                    </div>
+                    
+                    <a href="#">
+                        <span class="photo-icon"><i class="bi bi-person-circle"></i></span>
+                    </a>
+                    <a href="#">
+                        <span class="photo-edit"><i class="bi bi-pencil-fill"></i></span>
+                    </a>
+                </div>
+
+                <div class="profile-container">
+
+                    <div class="abas">
+                        <input type="radio" class="abas__radio" name="abas__perfil" id="publicacoes" checked>
+                        <label for="publicacoes" class="abas__label">Publicações</label>
+                        <div class="abas__conteudo">
+                            <div class="my-post">
+                                <div class="hidden">
+                                    <div class="box-text">
+                                        <a href="#"><i class="bi bi-person-circle"></i> Eu</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem officia praesentium dolorum, tempora molestias nam veniam velit adipisci officiis doloremque. Eveniet in voluptates explicabo amet itaque ipsum, modi eos.</p>
+                                    </div>
+
+                                    <img src="../assets/img/pagina perfil/passaro01.png">
+                                </div>
+                            </div>
+
+                            <div class="my-post">
+                                <div class="hidden">
+                                    <div class="box-text">
+                                        <a href="#"><i class="bi bi-person-circle"></i> Eu</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem officia praesentium dolorum, tempora molestias nam veniam velit adipisci officiis doloremque. Eveniet in voluptates explicabo amet itaque ipsum, modi eos.</p>
+                                    </div>
+
+                                    <img src="../assets/img/pagina perfil/passaro02.png">
+                                </div>
+                            </div>
+
+                            <div class="my-post">
+                                <div class="hidden">
+                                    <div class="box-text">
+                                        <a href="#"><i class="bi bi-person-circle"></i> Eu</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem officia praesentium dolorum, tempora molestias nam veniam velit adipisci officiis doloremque. Eveniet in voluptates explicabo amet itaque ipsum, modi eos.</p>
+                                    </div>
+
+                                    <img src="../assets/img/pagina perfil/passaro03.png">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <input type="radio" class="abas__radio" name="abas__perfil" id="fotos">
+                        <label for="fotos" class="abas__label">Fotos</label>
+                        <div class="abas__conteudo">
+                            <div class="container-fotos">
+
+                                <a href="../assets/img/pagina perfil/passaro01.png" class="gallery-fotos">
+                                    <img src="../assets/img/pagina perfil/passaro01.png" alt="Pássaro">
+                                </a>
+                                
+                                <a href="../assets/img/pagina perfil/belinha.jpg" class="gallery-fotos">
+                                    <img src="../assets/img/pagina perfil/belinha.jpg" alt="Belinha (cachorra)">
+                                </a>
+                                
+                                <a href="../assets/img/pagina perfil/girl.jpg" class="gallery-fotos">
+                                    <img src="../assets/img/pagina perfil/girl.jpg" alt="Ana Claudia">
+                                </a>
+
+                                <a href="../assets/img/pagina perfil/buiu-dog.jpg" class="gallery-fotos">
+                                    <img src="../assets/img/pagina perfil/buiu-dog.jpg" alt="Buiu (cachorro)">
+                                </a>
+
+                                <a href="../assets/img/pagina perfil/fred.jpg" class="gallery-fotos">
+                                    <img src="../assets/img/pagina perfil/fred.jpg" alt="Fred (cachorro)">
+                                </a>
+
+                                <a href="../assets/img/pagina perfil/joice.jpg" class="gallery-fotos">
+                                    <img src="../assets/img/pagina perfil/joice.jpg" alt="Joice Tavares">
+                                </a>
+
+
+
+
+
+                                <a href="../assets/img/pagina perfil/passaro02.png" class="gallery-fotos">
+                                    <img src="../assets/img/pagina perfil/passaro02.png" alt="Pássaro">
+                                </a>
+                                
+                                <a href="../assets/img/pagina perfil/cristina.jpg" class="gallery-fotos">
+                                    <img src="../assets/img/pagina perfil/cristina.jpg" alt="Cristina Vieira">
+                                </a>
+                                
+                                <a href="../assets/img/pagina perfil/bruno.jpg" class="gallery-fotos">
+                                    <img src="../assets/img/pagina perfil/bruno.jpg" alt="Bruno Coelho">
+                                </a>
+
+                                <a href="../assets/img/pagina perfil/james.jpg" class="gallery-fotos">
+                                    <img src="../assets/img/pagina perfil/james.jpg" alt="James (ramster)">
+                                </a>
+
+                                <a href="../assets/img/pagina perfil/gabriela.jpg" class="gallery-fotos">
+                                    <img src="../assets/img/pagina perfil/gabriela.jpg" alt="Gabriela Assunção">
+                                </a>
+
+                                <a href="../assets/img/pagina perfil/passaro03.png" class="gallery-fotos">
+                                    <img src="../assets/img/pagina perfil/passaro03.png" alt="Pássaro">
+                                </a>
+                    
+                            </div>
+                        </div>
+
+                        <input type="radio" class="abas__radio" name="abas__perfil" id="amigos">
+                        <label for="amigos" class="abas__label">Amigos</label>
+                        <div class="abas__conteudo">
+                            <div class="container-amigos">
+
+                                <div class="box-amigos">
+                                    <a href="#">
+                                        <div class="humano">
+                                            <div class="foto-humano">
+                                                <img src="../assets/img/pagina perfil/girl.jpg" alt="Ana Claudia Soares">
+                                            </div>
+                                            <h1 class="nome-humano">Ana Claudia Soares</h1>
+                                        </div>
+                                        <div class="parentesco">é mãe do</div>
+                                        <div class="pet">
+                                            <div class="foto-pet">
+                                                <img src="../assets/img/pagina perfil/buiu-dog.jpg" alt="Buiu">
+                                            </div>
+                                            <h1 class="nome-pet">Buiu</h1>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="box-amigos">
+                                    <a href="#">
+                                        <div class="humano">
+                                            <div class="foto-humano">
+                                                <img src="../assets/img/pagina perfil/bruno.jpg" alt="Bruno Coelho Pires">
+                                            </div>
+                                            <h1 class="nome-humano">Bruno Coelho Pires</h1>
+                                        </div>
+                                        <div class="parentesco">é pai do</div>
+                                        <div class="pet">
+                                            <div class="foto-pet">
+                                                <img src="../assets/img/pagina perfil/james.jpg" alt="James">
+                                            </div>
+                                            <h1 class="nome-pet">James</h1>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="box-amigos">
+                                    <a href="#">
+                                        <div class="humano">
+                                            <div class="foto-humano">
+                                                <img src="../assets/img/pagina perfil/gabriela.jpg" alt="Gabriela Assunção Dias">
+                                            </div>
+                                            <h1 class="nome-humano">Gabriela Assunção Dias</h1>
+                                        </div>
+                                        <div class="parentesco">é mãe da</div>
+                                        <div class="pet">
+                                            <div class="foto-pet">
+                                                <img src="../assets/img/pagina perfil/susi.jpg" alt="Susi">
+                                            </div>
+                                            <h1 class="nome-pet">Susi</h1>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="box-amigos">
+                                    <a href="#">
+                                        <div class="humano">
+                                            <div class="foto-humano">
+                                                <img src="../assets/img/pagina perfil/cristina.jpg" alt="Cristina Vieira Goulart">
+                                            </div>
+                                            <h1 class="nome-humano">Cristina Vieira Goulart</h1>
+                                        </div>
+                                        <div class="parentesco">é mãe da</div>
+                                        <div class="pet">
+                                            <div class="foto-pet">
+                                                <img src="../assets/img/pagina perfil/belinha.jpg" alt="Belinha">
+                                            </div>
+                                            <h1 class="nome-pet">Belinha</h1>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="box-amigos">
+                                    <a href="#">
+                                        <div class="humano">
+                                            <div class="foto-humano">
+                                                <img src="../assets/img/pagina perfil/joice.jpg" alt="Joice Tavares Cardoso">
+                                            </div>
+                                            <h1 class="nome-humano">Joice Tavares Cardoso</h1>
+                                        </div>
+                                        <div class="parentesco">é mãe do</div>
+                                        <div class="pet">
+                                            <div class="foto-pet">
+                                                <img src="../assets/img/pagina perfil/fred.jpg" alt="Fred">
+                                            </div>
+                                            <h1 class="nome-pet">Fred</h1>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+
+                        <input type="radio" class="abas__radio" name="abas__perfil" id="sobre">
+                        <label for="sobre" class="abas__label">Sobre</label>
+                        <div class="abas__conteudo">
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                        </div>
+
+                </div>
+
+            </div>
+        </main>
+
+        <script src="../assets/js/chat.js"></script>
+        <script src="../assets/js/painel-lateral.js"></script>
+
+    </body>
+</html>

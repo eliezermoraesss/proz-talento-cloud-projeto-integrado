@@ -1,0 +1,227 @@
+/*CONFIGURAÇÕES GERAIS*/
+
+/*Fonte utilizada*/
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans:wght@300;400;700&family=Roboto:wght@100&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Boogaloo', open-sans;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body{
+    background-color: #F6F1E9;
+}
+
+header {
+    height: 5rem;
+    width: 100%;
+    background-color: #4F200D;
+    box-shadow: 0 2px 6px 2px #3d322d;
+    position: fixed;
+    z-index: 6;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+    
+}
+
+
+
+
+
+/*LOGO CONNECTPET*/
+.nav-bar .logo img{
+    display: flex;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+
+
+
+
+/*BARRA DE PESQUISA*/
+.search-bar{
+    margin-top: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #e9e8e8;
+    height: 37px;
+    width: 250px;
+    padding: 5px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar:hover{
+    background-color: #fff;
+}
+
+.search-text{
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    width: 200px;
+    margin-left: 10px;
+
+}
+
+.search-btn .lupa{
+    width: 30px;
+    height:30px;
+    filter: brightness(0.3) sepia(1) saturate(5) hue-rotate(20deg);
+    cursor: pointer;
+}
+
+
+
+
+
+/*BOTÃO PROFILE*/
+.nav-bar .profile-button{
+    background-color: none;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+}
+
+.nav-bar .profile-button i{
+    border: none;
+    color: #fff;
+    background-color: none;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.nav-bar .profile-button i:hover {
+    color: #eef112;
+}
+
+
+/*Drop-menu do botão profile*/
+.nav-bar li{
+    display: inline-block;
+}
+
+.nav-bar li a{
+    display: inline-block;
+    padding: 0px;
+}
+
+.nav-bar .profile-button .dropdown-menu{
+    display: block;
+    margin: 0;
+    margin-top: -4px;
+    margin-left: -76px;
+    padding: 0;
+    position: absolute;
+    width: 140px;
+    height: 0px;
+    background-color: #4F200D;
+    overflow: hidden;
+    border-radius:  0 0 20px 20px;
+    transition: .7s;
+}
+
+.nav-bar .profile-button .dropdown-menu a:nth-child(1){
+    margin-top: 28px;
+}
+
+.nav-bar .profile-button .dropdown-menu a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px;
+    margin-left: 3px; 
+    padding: 10px;
+}
+
+.nav-bar .profile-button .dropdown-menu a i{
+    font-size: 18px;
+}
+
+.nav-bar .profile-button .dropdown-menu a i .drop-txt{
+    font-size: 17px;
+    font-style: normal;
+}
+
+.nav-bar .profile-button:hover .dropdown-menu{
+    width: 140px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVIDADE*/
+/*
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .profile-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-button .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+
+
+}
+
+
+
+

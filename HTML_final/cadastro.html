@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/css-final/cadastro.css">
+    
+</head>
+<body>
+  <div class="container">
+    <div class="form-image">
+      <img src="../assets/img/img-cadastro.svg">
+    </div>
+    
+    <form class="form" id="form">
+
+      <div class="header">
+        <h1>Seja muito bem-vindo(a) a nossa comunidade Pet!!!</h1>
+      </div>
+
+      <div class="form-box">
+        <div class="form-control">
+
+            <label for="username" >Nome</label>
+            <input type="text" id="username">
+            <i class="img-success" ><img src="../assets/img/pagina-cadastro/success-icon.svg" alt=""></i>
+            <i class="img-error" ><img src="../assets/img/pagina-cadastro/error-icon.svg" alt=""></i>
+
+            <small>Error Message</small>
+
+        </div>
+
+        <div class="form-control">
+
+            <label>Email</label>
+            <input type="email" id="email">
+            <i class="img-success" ><img src="../assets/img/pagina-cadastro/success-icon.svg" alt=""></i>
+            <i class="img-error" ><img src="../assets/img/pagina-cadastro/error-icon.svg" alt=""></i>
+
+            <small>Error Message</small>
+
+        </div>
+
+        <div class="form-control">
+
+            <label>Senha</label>
+            <input type="password" id="password">
+            <i class="img-success" ><img src="../assets/img/pagina-cadastro/success-icon.svg" alt=""></i>
+            <i class="img-error" ><img src="../assets/img/pagina-cadastro/error-icon.svg" alt=""></i>
+
+            <small>Error Message</small>
+
+        </div>
+
+        <div class="form-control">
+
+            <label>Confirme sua senha</label>
+            <input type="password" id="password-two">
+            <i class="img-success" ><img src="../assets/img/pagina-cadastro/success-icon.svg" alt=""></i>
+            <i class="img-error" ><img src="../assets/img/pagina-cadastro/error-icon.svg" alt=""></i>
+
+            <small>Error Message</small>
+
+        </div>
+
+        <div class="form-control">
+
+          <label for="petnome">Nome do seu pet:</label>
+          <input type="text" id="petnome">
+          <i class="img-success" ><img src="../assets/img/pagina-cadastro/success-icon.svg" alt=""></i>
+          <i class="img-error" ><img src="../assets/img/pagina-cadastro/error-icon.svg" alt=""></i>
+
+          <small>Error Message</small>
+
+        </div>
+
+        <div class="form-control">
+          
+          <label for="petidade"> Qual a idade do pet?</label>
+          <input type="number" id="petidade"/>
+
+          <small>Error Message</small>
+
+        </div>
+
+        <div class="form-control">
+
+          <label for="pet">Qual a espécie do seu pet?</label>
+          <select name="pet" id="pet">
+            <option value="">Selecione a opção</option>
+            <option value="check">Canina</option>
+            <option value="check">Felina</option>
+            <option value="check">Aviária</option>
+            <option value="check">Aquática</option>
+          </select>
+
+          <small>Error Message</small>
+          
+        </div>
+
+        <div class="form-control">
+
+          <label for="sexopet">Qual o sexo do seu pet?</label>
+          <select name="sexopet" id="sexopet">
+            <option value="">Selecione a opção</option>
+            <option value="check">Fêmea</option>
+            <option value="check">Macho</option>
+          </select> 
+
+          <small>Error Message</small>
+
+        </div>
+
+        <button type="submit" onclick="cadastrar()">Cadastrar</button>
+    </form>
+  </div>
+    
+
+    <script src="../assets/js/cadastro.js"></script>
+    
+</body>
+</html>

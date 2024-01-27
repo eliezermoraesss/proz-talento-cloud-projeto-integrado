@@ -1,0 +1,225 @@
+/*CONTAINER PARA INSERIR POSTAGENS*/
+.container input{
+    height: 150px;
+    width: 700px;
+    margin-top: 110px;
+    margin-left: 320px;
+    background-color: #e9e8e8;
+    text-align: center;
+    font-size: 25px;
+    border: solid 3px #4F200D;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.container input:hover{
+    background-color: #fff;
+}
+
+
+/*Botões do container*/
+.elemento .btn{
+    display: inline-block;
+    flex-wrap: nowrap;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    background-color: #4F200D;
+    border-radius: 50%;
+}
+
+.elemento .btn:nth-child(1){
+    margin-left: 880px;
+}
+
+.elemento .btn .icon{
+    text-align: center;
+    margin-top: 2px;
+}
+
+.elemento .btn .icon i{
+    color: #fff;
+    font-size: 20px;
+}
+
+.elemento .btn:hover{
+    background-color: #eef112;
+}
+
+.elemento .btn:hover .icon i{
+    color: #000;
+}
+
+
+
+
+
+/*SEÇÃO DE POSTAGENS*/
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(9px);
+    transition: all 1.5s;
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+    transform: translateX(0);
+}
+
+section:nth-child(1){
+    margin-top: 70px;
+}
+
+
+/*Cabeçalho do post*/
+.post .box-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 320px;
+}
+
+.post .box-text a{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #4F200D;
+    text-decoration: none;
+}
+
+.post .box-text p{
+    margin-left: 0px;
+    margin-right: 260px;
+    font-size: 20px;
+    color: #000;
+    word-wrap: nowrap;
+}
+
+
+/*Imagem do post*/
+.post .hidden img{
+    height: 410px;
+    width: 430px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+}
+
+
+/*Botões do post*/
+.post .buttons button{
+    position: relative;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    top: -70px;
+    border-radius: 50%;
+    border: none;
+    width: 45px;
+    height: 45px;
+    transition: .2s;
+    background-color: #4F200D;
+    margin: 5px;
+}
+
+.post .buttons i{
+    font-size: 20px;
+    color: #fff
+}
+
+.post .buttons button:hover{
+    background-color: #eef112;
+}
+
+.post .buttons button:hover i{
+    color: #000;
+}
+
+
+
+
+
+/*SEÇÃO DE SHORTS*/
+.hidden h2{
+    text-align: center;
+    font-size: 30px;
+    margin-left: -725px;
+    margin-bottom: 15px;
+    color: #4F200D;
+}
+
+.shorts{
+    display: flex;
+    gap: 20px;
+}
+
+.shorts .shorts-video{
+    width: 280px;
+    height: 430px;
+    box-shadow: 3px 5px 10px #000;
+    border-radius: 70px;
+}
+
+.shorts .shorts-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 70px;
+}
+
+.shorts .shorts-video video:hover{
+    cursor: pointer;
+}
+
+.shorts .shorts-video:hover .shorts-autor{
+    cursor: pointer;
+    display: flex;
+}
+
+.shorts .shorts-autor{
+    width: 250px;
+    height: 80px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: top;
+    margin-left: 30px;
+    margin-top: -80px;
+}
+
+.shorts .foto-autor{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eef112;
+    border-radius: 50%;
+}
+
+.shorts .foto-autor img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.shorts .shorts-autor h1{
+    font-size: 20px;
+    padding-left: 5px;
+    margin-top: 8px;
+    color: #eef112;
+    font-weight: normal;
+}
+
+.shorts .shorts-autor p{
+    font-size: 15px;
+    color: #eef112;
+    padding-left: 45px;
+    margin-top: -25px;
+    font-weight: normal;
+}
